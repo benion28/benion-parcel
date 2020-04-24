@@ -1,0 +1,26 @@
+{
+  "name": "benion-parcel",
+  "version": "1.0.0",
+  "description": "Benion Parcel Boilerplate",
+  "main": "index.js",
+  "homepage": "https://benion28.github.io/benion-parcel",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel public/index.html --out-dir development -p 8828",
+    "build": "parcel build public/index.html --out-dir dist --public-url ./",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Bernard Iorver",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/runtime-corejs2": "^7.9.2",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "gh-pages": "^2.2.0"
+  }
+}
